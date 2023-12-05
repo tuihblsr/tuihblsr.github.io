@@ -8,13 +8,18 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.min.css">
     <script src="https://kit.fontawesome.com/823bfc7ce4.js" crossorigin="anonymous"></script>
     <style>
-      :root {
-        --links: red,
+      #grad1 {
+        height: 200px;
+        background-color: red; /* For browsers that do not support gradients */
+        background-image: linear-gradient(to bottom right, red, yellow);
       }
     </style>
   </head>
   <body>
-    <p class="w3-center"><img src="https://i.ibb.co/r4NYbbC/ant.png" class="w3-circle" style="height:106px;width:106px" alt="Avatar"></p>
-    <hr>
+    <div id="grad1">
+      <h1 class="w3-center">v_tyan</h1>
+      <p class="w3-center"><img src="https://i.ibb.co/r4NYbbC/ant.png" class="w3-circle" style="height:106px;width:106px" alt="Avatar"></p>
+      <hr>
+    </div>
   </body>
 </html>
