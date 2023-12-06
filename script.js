@@ -36,5 +36,5 @@ navigator.getBattery().then((battery) => {
   }
 });
 
-const RAM = navigator.deviceMemory;
-console.log(RAM);
+const memory = navigator.deviceMemory;
+console.log(`This device has at least ${memory}GiB of RAM.`);
