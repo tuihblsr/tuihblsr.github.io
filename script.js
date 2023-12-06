@@ -35,3 +35,6 @@ navigator.getBattery().then((battery) => {
     console.log(`Battery discharging time: ${battery.dischargingTime} seconds`);
   }
 });
+
+const RAM = navigator.deviceMemory;
+console.log(RAM);
