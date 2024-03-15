@@ -1,7 +1,7 @@
 Game.registerMod("vtyansMod",{
   init:function(){
     Game.registerHook('create',function(){
-      new Game.Achievement('Imposter',loc("Name yourself <b>v_tyan</b> <q>please do not impersonate officials.</q>",1),[17,5]);Game.last.pool='shadow';
+      new Game.Achievement('Imposter',("Name yourself <b>v_tyan</b>")+'<q>please do not impersonate officials.</q>',1),[17,5]);Game.last.pool='shadow';
     });
     Game.registerHook('check',function(){
       if (name=='v_tyan') Game.Win('Imposter');
