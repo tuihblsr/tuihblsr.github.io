@@ -4,7 +4,6 @@ Game.registerMod("vtyansMod",{
       new Game.Achievement('Imposter',loc("Name yourself <b>v_tyan</b>.",1)+'<q>Please do not impersonate officials.</q>',[17,5]);Game.last.pool='shadow';
     });
     Game.registerHook('check',function(){
-      Game.bakeryNameL.textContent=bakename;
 			bakename=Game.bakeryName.toLowerCase();
       if (bakename=='v_tyan') Game.Win('Imposter');
     });
