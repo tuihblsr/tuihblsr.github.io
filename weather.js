@@ -34,7 +34,7 @@ function weatherShowFn(data) {
 	$('#wind-speed').
 		html(`Wind Speed: ${data.wind.speed} m/s`);
 	$('#weather-icon').
-		attr('https://cdn2.iconfinder.com/data/icons/weather-365/64/weather-sun-cloud-rain-512.png',
+		attr('src',
 			`...`);
 	$('#weather-info').fadeIn();
 }
