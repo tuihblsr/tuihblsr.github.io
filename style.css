@@ -1,0 +1,260 @@
+body {
+	/* background-color: #342122;*/
+    background-color: #4869b5;
+}
+
+#holder-all {
+	width: 800px;
+	border: 3px solid #4D3E1F;
+	padding: 0px;
+	margin-right: auto;
+	margin-left: auto;
+	left: auto;
+	right: auto;
+	position: relative;
+	/* background-color: #c8be81;*/
+    background-color: #A7B5D8;
+}
+
+#holder-news {
+	width: 280px;
+	top: 0px;
+	float: right;
+	clip: rect(auto,auto,100px,25px);
+	padding: 10px;
+	/* background-color: #6F6531;*/
+    background-color: #14409e;
+}
+
+#header {
+	top: 0px;
+}
+
+#footer {
+	bottom: 0px;
+	text-align: center;
+	background-image: url(images/footer.jpg);
+	height: 28px;
+}
+
+.font-toplinks {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #FFFFFF;
+	font-weight: bold;
+}
+
+.font-toplinks a:link {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #FFFFFF;
+	font-weight: bold;
+}
+
+.font-toplinks a:visited {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #FFFFFF;
+	font-weight: bold;
+}
+
+.font-toplinks a:hover {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #FFFF00;
+	font-weight: bold;
+}
+
+.font-toplinks a:active {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #FF9900;
+	font-weight: bold;
+}
+
+.font-body-title {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 24px;
+	color: #FFFFFF;
+	font-weight: bold;
+	padding: 2px;
+}
+
+.font-body-title-secondary {
+	font-family: "Times New Roman", Times, serif;
+	font-size: 18px;
+	color: #232309;
+	font-weight: bold;
+	padding: 2px;
+	font-style: bold;
+}
+
+.font-body-title-albums {
+	font-family: "Times New Roman", Times, serif;
+	font-size: 18px;
+	color: #232309;
+	font-weight: bold;
+	padding: 2px;
+	font-style: italic;
+}
+
+.font-body {
+	font-family: "Times New Roman", Times, serif;
+	font-size: 14px;
+	color: #232309;
+	font-weight: normal;
+}
+
+.font-body a:link {
+	font-family: "Times New Roman", Times, serif;
+	font-size: 14px;
+	color: #AD4D34;
+	font-weight: normal;
+}
+
+.font-body a:visited {
+	font-family: "Times New Roman", Times, serif;
+	font-size: 14px;
+	color: #AD4D34;
+	font-weight: normal;
+}
+
+.font-body a:hover {
+	font-family: "Times New Roman", Times, serif;
+	font-size: 14px;
+	color: #FF0000;
+	font-weight: normal;
+}
+
+.font-body a:active {
+	font-family: "Times New Roman", Times, serif;
+	font-size: 14px;
+	color: #FFFF00;
+	font-weight: normal;
+}
+
+.font-body-bold {
+
+	font-family: "Times New Roman", Times, serif;
+	font-size: 14px;
+	color: #232309;
+	font-weight: bold;
+}
+
+.font-body-songnames {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #232309;
+	font-weight: normal;
+}
+
+.font-body-songnames a:link {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #232309;
+	font-weight: normal;
+}
+
+.font-body-songnames a:visited {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #232309;
+	font-weight: normal;
+}
+
+.font-body-songnames a:hover {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #FF0000;
+	font-weight: normal;
+}
+
+.font-body-songnames a:active {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #FFFF00;
+	font-weight: normal;
+}
+
+.font-footer {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #FFFFFF;
+	font-weight: normal;
+	text-align: center;
+}
+
+.font-footer a:link  {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #FFFFFF;
+	font-weight: normal;
+}
+
+.font-footer a:visited {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #FFFFFF;
+	font-weight: normal;
+}
+
+.font-footer a:hover  {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #FFFFFF;
+	font-weight: normal;
+}
+
+.font-footer a:active  {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #FFFFFF;
+	font-weight: normal;
+}
+
+.font-news-title {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #FFFFFF;
+	font-weight: bold;
+	text-align: left;
+}
+
+.font-news-body {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #FFFFFF;
+	font-weight: normal;
+}
+
+.font-news-body a:link {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	/* color: #B3B35D; */
+    color: #14409e;
+	font-weight: normal;
+}
+
+.font-news-body a:visited {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	/* color: #B3B35D; */
+    color: #14409e;
+	font-weight: normal;
+}
+
+.font-news-body a:hover {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	/* color: #D1D002; */
+    color: #14409e;
+	font-weight: normal;
+}
+
+.font-news-body a:active {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	/* color: #FFFF00; */
+    color: #14409e;
+	font-weight: normal;
+}
