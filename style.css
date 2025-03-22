@@ -5,7 +5,8 @@ body {
 
 #holder-all {
 	width: 800px;
-	border: 3px solid #4D3E1F;
+	/* border: 3px solid #4D3E1F; */
+	border: 3px solid #042878;
 	padding: 0px;
 	margin-right: auto;
 	margin-left: auto;
