@@ -28,6 +28,7 @@
     width: auto;
     background-color: black;
     color: #fff;
+    min-width: 100px;
     text-align: center;
     padding: 5px 10;
     border-radius: 6px;
