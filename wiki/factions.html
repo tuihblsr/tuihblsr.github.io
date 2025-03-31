@@ -27,7 +27,7 @@
     </div>
     <div>
         <div class="toggle-section">
-            <label class="toggle-label">&#8203;+ The Hivers</label>
+            <label class="toggle-label">+ The Hivers</label>
             <div class="toggle-text">
                 <p>"What are the hivers?"</p>
                 <p>"The faction calls itself a simple data-processing collective. But its true goals can only be known by those privileged to be included within the trust boundary of the thirty-fifth circle," Lachlan's voice slowed down as he tried to remember why he knew these things. "It is rumored that, within that select circle, any member can kill any other simply by thinking of the deed."</p>
@@ -45,10 +45,10 @@
             label.addEventListener('click', () => {
                 if (content.style.display === 'none' || content.style.display === '') {
                     content.style.display = 'block';
-                    label.textContent = `&#8203;- ${originalText}`;
+                    label.textContent = `- ${originalText}`;
                 } else {
                     content.style.display = 'none';
-                    label.textContent = `‎&#8203;+ ${originalText}`;
+                    label.textContent = `+ ${originalText}`;
                 }
             });
         });
