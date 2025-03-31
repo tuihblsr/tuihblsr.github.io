@@ -25,10 +25,21 @@
     </div>
     <div>
         <input type="checkbox" id="toggleText">
-        <label for="toggleText"><b>‎ > The Hivers</b></label>
+        <label for="toggleText" id="toggleLabel"><b>‎ + The Hivers</b></label>
         <div class="toggle-text">
             <p>Testy test test</p>
         </div>
     </div>
+    <script>
+        const toggleText = document.getElementById("toggleText");
+        const toggleLabel = document.getElementById("toggleLabel");
+        toggleText.addEventListener("change" function() {
+            if (toggleText.checked) {
+                toggleLabel.textContent = "‎ + The Hivers";
+            } else {
+                toggleLabel.textContent = "‎ - The Hivers";
+            }
+        });
+    </script>
 </body>
 </html>
