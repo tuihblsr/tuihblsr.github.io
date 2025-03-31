@@ -1,5 +1,7 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
     <link href="https://tuihblsr.github.io/style.css" rel="stylesheet" type="text/css">
     <link href="https://tuihblsr.github.io/style2.css" rel="stylesheet" type="text/css">
 </head>
@@ -25,13 +27,11 @@
     </div>
     <div>
         <div class="toggle-section">
-            <label class="toggle-label">‎‎ + The Hivers</label>
+            <label class="toggle-label">a+ The Hivers</label>
             <div class="toggle-text">
                 <p>"What are the hivers?"</p>
-                <p>"The faction calls itself a simple data-processing collective. But its true goals can only be known by those privileged to be
-included within the trust boundary of the thirty-fifth circle," Lachlan's voice slowed down as he tried to rememnber why he knew these things. "It is rumoured that, within that select circle, any member can
-kill any other simply by thinking of the deed."</p>
-                <p>"When you join them, they inject you with billions of nanosites. These tiny machines travel through your bloodstream until they reach the capillaries in your brain. Once there, they breach the blood/brain barrier, attaching themselves to an axon, and from that point, you're integrated into their network.</p>
+                <p>"The faction calls itself a simple data-processing collective. But its true goals can only be known by those privileged to be included within the trust boundary of the thirty-fifth circle," Lachlan's voice slowed down as he tried to remember why he knew these things. "It is rumored that, within that select circle, any member can kill any other simply by thinking of the deed."</p>
+                <p>"When you join them, they inject you with billions of nanosites. These tiny machines travel through your bloodstream until they reach the capillaries in your brain. Once there, they breach the blood/brain barrier, attaching themselves to an axon, and from that point, you're integrated into their network."</p>
                 <p>From then on, you're connected. You can access their entire database, provided you have the clearance to retrieve the information you're after. All of your memories and thoughts are uploaded to their data nodes, so there's no keeping secrets."</p>
             </div>
         </div>
@@ -43,14 +43,12 @@ kill any other simply by thinking of the deed."</p>
             const originalText = label.textContent.slice(2);
 
             label.addEventListener('click', () => {
-                const sign = label.textContent.charAt(1);
-                
                 if (content.style.display === 'none' || content.style.display === '') {
                     content.style.display = 'block';
-                    label.textContent = `‎ - ${originalText}`;
+                    label.textContent = `a- ${originalText}`;
                 } else {
                     content.style.display = 'none';
-                    label.textContent = `‎ + ${originalText}`;
+                    label.textContent = `a+ ${originalText}`;
                 }
             });
         });
