@@ -1,4 +1,4 @@
-p, dl, input, label {
+p, dl{
     font-size: 14px;
 }
 .boxo {
@@ -53,7 +53,7 @@ input[type="checkbox"] {
 label {
     color: blue;
     cursor: pointer;
-    text-decoration: underline;
+    font-size: 14px;
 }
 .toggle-text {
     display: none;
