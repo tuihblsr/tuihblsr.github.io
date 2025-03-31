@@ -47,19 +47,16 @@ p, dl{
     color: inherit;
     text-decoration: none;
 }
-input[type="checkbox"] {
-    display: none;
+.toggle-section {
+    margin-bottom: 20px;
 }
 label {
     color: blue;
     cursor: pointer;
-    font-size: 14px;
+    text-decoration: underline;
 }
 .toggle-text {
     display: none;
     color: black;
     margin-top: 10px;
-}
-input[type="checkbox"]:checked + label + .toggle-text {
-    display: block;
 }
