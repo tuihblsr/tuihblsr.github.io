@@ -25,7 +25,7 @@
     </div>
     <div>
         <div class="toggle-section">
-            <label class="toggle-label">‎ The Hivers</label>
+            <label class="toggle-label">‎ + The Hivers</label>
             <div class="toggle-text">
                 <p>"What are the hivers?"</p>
                 <p>"The faction calls itself a simple data-processing collective. But its true goals can only be known by those privileged to be
@@ -44,10 +44,10 @@ kill any other simply by thinking of the deed."</p>
             label.addEventListener('click', () => {
                 if (content.style.display === 'none' || content.style.display === '') {
                     content.style.display = 'block';
-                    label.textContent = ` - ${label.textContent.slice(2)}`;
+                    label.textContent = ` - ${label.textContent.slice(4)}`;
                 } else {
                     content.style.display = 'none';
-                    label.textContent = ` + ${label.textContent.slice(2)}`;
+                    label.textContent = ` + ${label.textContent.slice(4)}`;
                 }
             });
         });
