@@ -1,5 +1,7 @@
 // Elements
 const console_element = document.getElementById("console");
+const save_btn = document.getElementById("save");
+const load_btn = document.getElementById("load");
 
 const credits_display = document.getElementById("credits");
 const stuff_display = document.getElementById("stuff");
@@ -56,24 +58,36 @@ function updateUI() {
     stuff_display.textContent = state.stuff.amount.toFixed(2);
     junk_display.textContent = state.junk.amount;
     buy_thingy_btn.disabled = state.credits.amount < state.producers.thingy.cost;
-    sell_junk_btn.disabled = state.junk.amount <= 0;
-    sell_stuff_btn.disabled = state.stuff.amount <= 0;
+}
+function saveGame() {
+    const save_data = JSON.stringify(state);
+    localStorage.setItem("gameSave", save_data);
+    logToConsole("Game saved!")
+}
+function loadGame() {
+    const save_data = localStorage.getItem("gameSave");
+    if (save_data) {
+        Object.assign(state, JSON.parse(save_data));
+        updateUI();
+        logToConsole("Game loaded!")
+    }
 }
 function logToConsole(message) {
     const message_element = document.createElement("p");
     message_element.textContent = message
     console_element.appendChild(message_element);
     console_element.scrollTop = console_element.scrollHeight;
-    // if (console_element.children.length > 50) {
-    //     console_element.removeChild(console_element.firstChild);
-    // }
-}
-function capitalize(word) {
-    return word.charAt(0),toUpperCase() + string.slice(1);
+    if (console_element.children.length > 50) {
+        console_element.removeChild(console_element.firstChild);
+    }
 }
 window.addEventListener("load", () => {
     logToConsole("Welcome to Stuff Maker!")
+    loadGame();
 });
+function capitalize(word) {
+    return word.charAt(0).toUpperCase() + word.slice(1);
+}
 
 // Right-click to sell
 document.querySelectorAll(".resource-item").forEach(item => {
@@ -85,7 +99,7 @@ document.querySelectorAll(".resource-item").forEach(item => {
             const earnings = stuff_to_sell * 10;
             state.credits.amount += earnings;
             state.stuff.amount = 0;
-            logToConsole("You sold some stuff for $" + earning.toFixed(2) + "!");
+            logToConsole("You sold some stuff for $" + earnings.toFixed(2) + "!");
         } else if (type === "junk" && state.junk.amount > 0) {
             const junk_to_sell = state.junk.amount;
             const earnings = junk_to_sell * 2;
@@ -97,6 +111,12 @@ document.querySelectorAll(".resource-item").forEach(item => {
 });
 
 // Buttons
+save_btn.addEventListener("click", () => {
+    saveGame();
+});
+load_btn.addEventListener("click", () => {
+    loadGame();
+})
 scavenge_btn.addEventListener("click", () => {
     const chance = [
         { item: "nothing", weight: 10 },
