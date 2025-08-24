@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Stuff Maker!</title>
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <body>
+        <div class="game-container">
+            <div class="left-column">
+                <div id="console" class="console-log"></div>
+                <section class="important">
+                    <div class="money-panel">
+                        <strong>Credits:</strong> <span id="credits"></span>
+                    </div>
+                    <div class="resource-grid">
+                        <!-- <div class="resource-item"><strong>Credits:</strong> <span id="credits"></span></div> -->
+                        <div class="resource-item" draggable="true" data-type="stuff"><strong>Stuff:</strong> <span id="stuff"></span></div>
+                        <div class="resource-item" draggable="true" data-type="junk"><strong>Junk:</strong> <span id="junk"></span></div>
+                    </div>
+                </section>
+            </div>
+            <div class="right-column">
+                <section class="actions">
+                    <h2>Actions</h2>
+                    <button id="scavenge" class="tooltip" data-title="Scavenge for something. You might find something useful!">Scavenge</button>
+                </section>
+                <section class="market">
+                    <h2>Market</h2>
+                    <button id="sell-junk">Sell Junk</button>
+                    <button id="sell-stuff">Sell Stuff</button>
+                    <br>
+                    <button id="buy-thingy" class="tooltip" data-title="Order a government-approved Thingy. Now with 12% more compliance and 20% fewer incidents!">Buy a Thingy (Cost: $10) - You own: 0</button>
+                </section>
+            </div>
+        </div>
+        <!-- Include jQuery -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <!-- Include Popper.js -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+        <!-- Include Bootstrap JavaScript -->
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script src="main.js"></script>
+    </body>
+</html>
