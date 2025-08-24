@@ -64,9 +64,9 @@ function logToConsole(message) {
     message_element.textContent = message
     console_element.appendChild(message_element);
     console_element.scrollTop = console_element.scrollHeight;
-    if (console_element.children.length > 50) {
-        console_element.removeChild(console_element.firstChild);
-    }
+    // if (console_element.children.length > 50) {
+    //     console_element.removeChild(console_element.firstChild);
+    // }
 }
 function capitalize(word) {
     return word.charAt(0),toUpperCase() + string.slice(1);
