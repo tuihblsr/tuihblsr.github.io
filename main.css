@@ -1,0 +1,133 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f2f2f2;
+    color: #222;
+    padding: 20px;
+    max-width: 1000px;
+    margin: auto;
+    font-size: 15px;
+}
+h2 {
+    font-size: 16px;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 3px;
+}
+section {
+    margin-bottom: 20px;
+}
+
+/* Layout */
+.game-container {
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.left-column {
+    flex: 1;
+    min-width: 300px;
+}
+.right-column {
+    flex: 1;
+    min-width: 300px;
+}
+
+/* Inventory */
+.money-panel {
+    background-color: #e8f5e9;
+    border: 1px solid #a5d6a7;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #2e7d32;
+}
+.resource-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    gap: 10px;
+    background: #fff;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+}
+.resource-item {
+    background: #f9f9f9;
+    padding: 6px 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+}
+.resource-item:hover {
+    background-color: #e0e0e0;
+    cursor: pointer;
+}
+.resource-item strong {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 3px;
+}
+
+/* Console */
+.console-log {
+    background: #fafafa;
+    color: #222;
+    font-family: monospace;
+    padding: 10px;
+    height: 150px;
+    overflow-y: auto;
+    margin-bottom: 20px;
+    border: 1px solid #000;
+    font-size: 12px;
+    border-radius: 5px;
+}
+.console-log p {
+    margin: 0;
+    padding: 2px 0;
+}
+
+/* Buttons */
+button {
+    font-size: 14px;
+    padding: 6px 12px;
+    margin: 6px 0;
+    border: 1px solid #aaa;
+    background-color: #eee;
+    cursor: pointer;
+    width: 100%;
+    box-sizing: border-box;
+}
+button:hover {
+    background-color: #ddd;
+}
+
+/* Tooltips */
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+.tooltip:hover:after {
+    content: attr(data-title);
+    position: absolute;
+    left: 0;
+    top: -30px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 4px;
+    white-space: nowrap;
+    font-size: 12px;
+    z-index: 10;
+}
+.tooltip:hover:before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: 10px;
+    border: 5px solid transparent;
+    border-top-color: rgba(0, 0, 0, 0.8);
+    z-index: 9;
+}
