@@ -1,7 +1,7 @@
 // Elements
 const console_element = document.getElementById("console");
 const save_btn = document.getElementById("save");
-const load_btn = document.getElementById("load");
+const clear_btn = document.getElementById("clear");
 
 const credits_display = document.getElementById("credits");
 const stuff_display = document.getElementById("stuff");
@@ -72,6 +72,13 @@ function loadGame() {
         logToConsole("Game loaded!")
     }
 }
+function clearGame() {
+    let confirm_choice = confirm("Are you SURE?")
+    if (confirm_choice) {
+        localStorage.clear();
+        location.reload();
+    }
+}
 function logToConsole(message) {
     const message_element = document.createElement("p");
     message_element.textContent = message
@@ -114,8 +121,8 @@ document.querySelectorAll(".resource-item").forEach(item => {
 save_btn.addEventListener("click", () => {
     saveGame();
 });
-load_btn.addEventListener("click", () => {
-    loadGame();
+clear_btn.addEventListener("click", () => {
+    clearGame();
 })
 scavenge_btn.addEventListener("click", () => {
     const chance = [
