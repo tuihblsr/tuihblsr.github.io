@@ -1,7 +1,7 @@
-function format(g) { return g }
 const element = document.getElementById('importantscriptything');
 if (element) {
-	
+
+	function format(g) { return g }
 	//Declare and Initialize Variables
 	var BeachBall = {};
 	BeachBall.incoming_ONG = 0;
