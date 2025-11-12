@@ -1,3 +1,4 @@
+//
 const element = document.getElementById('importantscriptything');
 if (element) {
 
